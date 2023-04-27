@@ -17,7 +17,7 @@ export default function Posts() {
   }, []);
   const getAllPost = async () => {
     const posts = await axios.get(`${BACKEND_URL}/users/${USERID}/posts/`);
-    console.log(posts.data);
+    // console.log(posts.data);
     setAllPost(posts.data);
   };
 
