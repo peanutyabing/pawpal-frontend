@@ -29,8 +29,9 @@ import socketIO from "socket.io-client";
 import Home from "./Components/Home";
 import PostForm from "./Components/PostForm";
 import Lost from "./Lost.js";
+import { BACKEND_URL } from "./Constants.js";
 
-const socket = socketIO.connect("http://localhost:3000");
+const socket = socketIO.connect(BACKEND_URL);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
